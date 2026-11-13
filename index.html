@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0b0b0b">
-<meta name="description" content="Video Editor & Videographer — cinematic edits, social media films, photography and graphic design.">
-<title>Video Editor & Videographer | Creative Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#0b0b0b" name="theme-color"/>
+<meta content="Video Editor &amp; Videographer — cinematic edits, social media films, photography and graphic design." name="description"/>
+<title>Video Editor &amp; Videographer | Creative Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--bg:#090909;--panel:#121212;--muted:#a4a4a4;--text:#f6f4f0;--orange:#ff6b24;--line:#282828}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}.brand{font:700 18px 'Space Grotesk';letter-spacing:.08em}.brand span{color:var(--orange)}.navlinks{display:flex;gap:28px;color:#c7c7c7;font-size:13px}.navlinks a:hover{color:var(--orange)}.menu{display:none;background:none;border:1px solid var(--line);color:white;padding:9px 12px;border-radius:7px}
@@ -19,145 +20,53 @@
 .contact{background:linear-gradient(110deg,#211109,#101010 70%);border:1px solid #ff6b2440;border-radius:12px;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:30px}.contact h2{font:700 clamp(32px,5vw,52px)/1 'Space Grotesk';margin:10px 0}.contact p{color:#b9aaa2;max-width:470px;line-height:1.7;font-size:14px}.footer{padding:30px 0;color:#777;font-size:11px;display:flex;justify-content:space-between;gap:15px}.orange{color:var(--orange)}
 @media(max-width:800px){.navlinks{display:none;position:absolute;top:77px;left:0;right:0;background:#111;padding:22px;z-index:10;flex-direction:column}.navlinks.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr;padding:55px 0;min-height:auto}.hero-visual{height:360px}.cards{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr;gap:28px}.services{grid-template-columns:repeat(2,1fr)}.contact{padding:30px;display:block}.contact .btn{margin-top:10px}}
 @media(max-width:520px){.wrap{width:min(100% - 30px,1160px)}.hero h1{font-size:52px}.cards{grid-template-columns:1fr}.thumb{height:220px}.section{padding:65px 0}.section-head{display:block}.services{grid-template-columns:1fr 1fr}.service{padding:17px 13px}.footer{display:block;line-height:2}}
+
+/* Keep project cards aligned in the original responsive grid */
+#projects > .project{display:flex;flex-direction:column;min-width:0}
+#projects > .project .thumb{flex:0 0 215px}
+#projects > .project .project-info{flex:1}
+@media(max-width:520px){#projects > .project .thumb{flex-basis:220px}}
 </style>
 </head>
 <body>
 <header class="wrap nav">
-  <a class="brand" href="#home">am</span>.jeeson</a>
-  <nav class="navlinks" id="navlinks"><a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#contact">CONTACT</a></nav>
-  <button class="menu" id="menu" aria-label="Open navigation">MENU</button>
+<a class="brand" href="#home">FRAME<span>.</span>BY<span>.</span>FRAME</a>
+<nav class="navlinks" id="navlinks"><a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#contact">CONTACT</a></nav>
+<button aria-label="Open navigation" class="menu" id="menu">MENU</button>
 </header>
 <main>
 <section class="wrap hero" id="home">
- <div>
-  <div class="eyebrow">VIDEO EDITOR · VIDEOGRAPHER</div>
-  <h1>Visuals that<br>make an <em>impact.</em></h1>
-  <p>I turn ideas into engaging visual stories through cinematic video editing, videography and creative design. From salon campaigns to social-first content, every frame has a purpose.</p>
-  <div class="actions"><a class="btn primary" href="#work">EXPLORE MY WORK ↗</a><a class="btn ghost" href="#contact">LET'S CONNECT</a></div>
- </div>
- <div class="hero-visual"><div class="corner">CREATIVE PORTFOLIO / 2026</div><div class="play">▶</div><div class="visual-label"><small>EDIT · CREATE · INSPIRE</small><strong>Your story. My frame.</strong></div></div>
+<div>
+<div class="eyebrow">VIDEO EDITOR · VIDEOGRAPHER</div>
+<h1>Visuals that<br/>make an <em>impact.</em></h1>
+<p>I turn ideas into engaging visual stories through cinematic video editing, videography and creative design. From salon campaigns to social-first content, every frame has a purpose.</p>
+<div class="actions"><a class="btn primary" href="#work">EXPLORE MY WORK ↗</a><a class="btn ghost" href="#contact">LET'S CONNECT</a></div>
+</div>
+<div class="hero-visual"><div class="corner">CREATIVE PORTFOLIO / 2026</div><div class="play">▶</div><div class="visual-label"><small>EDIT · CREATE · INSPIRE</small><strong>Your story. My frame.</strong></div></div>
 </section>
 <section class="section" id="work"><div class="wrap">
- <div class="section-head"><div><div class="eyebrow">SELECTED PROJECTS</div><h2>My <span class="orange">Creative</span> Work</h2></div><p class="section-intro">A selection of the formats I create. These are starter placeholders—replace them with your own videos, photographs and designs.</p></div>
- <div class="filters"><button class="filter active" data-filter="all">ALL WORK</button><button class="filter" data-filter="video">VIDEO</button><button class="filter" data-filter="social">SOCIAL MEDIA</button><button class="filter" data-filter="design">GRAPHIC DESIGN</button><button class="filter" data-filter="photo">PHOTOGRAPHY</button></div>
- <div class="cards" id="projects">
-  <article class="project" data-kind="video"><div class="thumb"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80" alt="Beauty salon styling"><div class="placeholder"><b>SALON FILM</b><span>ADD YOUR VIDEO</span></div></div><<div class="project-info">
-<small>VIDEO / PROMOTION</small>
-<h3>Salon Cinematic</h3>
-<p>Beauty, styling and service promotional films.</p>
-
-<a href="https://www.youtube.com/shorts/neLBMXxHz0E"
-target="_blank"
-style="color:#ff7a00;display:inline-block;margin-top:12px;">
-WATCH VIDEO ↗
-</a>
-
-<article class="project" data-kind="social">
-
-  <div class="thumb">
-    <img
-      src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=900&q=85"
-      alt="Cinematic video production"
-      loading="lazy"
-      onerror="this.style.display='none';"
-    >
-
-    <div class="placeholder">
-      <b>REELS</b>
-      <span>INSTAGRAM REELS</span>
-    </div>
-  </div>
-
-  <div class="project-info">
-    <small>SOCIAL / SHORT-FORM CONTENT</small>
-
-    <h3>Instagram Reels</h3>
-
-    <p>Fast-paced edits built to capture attention.</p>
-
-    <a
-      href="https://www.instagram.com/thestylinghousesalon/reels/"
-      target="_blank"
-      rel="noopener noreferrer"
-      style="display:inline-block; margin-top:18px; color:#ff6b24; font-weight:700;"
-    >
-      VIEW ALL REELS ↗
-    </a>
-  </div>
-
-</article>
-  
-  <article class="project" data-kind="video"><div class="thumb"><img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=900&q=80" alt="Camera filming"><div class="placeholder"><b>YOUTUBE</b><span>ADD YOUR VIDEO</span></div></div><div class="project-info">
-  <small>VIDEO / YOUTUBE</small>
-
-  <h3>YouTube Content</h3>
-
-  <p>Long-form edits, pacing, titles and thumbnails.</p>
-
-  <a
-    href="https://youtu.be/9O-9vjLxjAU"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="display:inline-block; margin-top:18px;
-           color:#ff6b24; font-weight:700;"
-  >
-    WATCH ON YOUTUBE ↗
-  </a>
+<div class="section-head"><div><div class="eyebrow">SELECTED PROJECTS</div><h2>My <span class="orange">Creative</span> Work</h2></div><p class="section-intro">A selection of the formats I create. These are starter placeholders—replace them with your own videos, photographs and designs.</p></div>
+<div class="filters"><button class="filter active" data-filter="all">ALL WORK</button><button class="filter" data-filter="video">VIDEO</button><button class="filter" data-filter="social">SOCIAL MEDIA</button><button class="filter" data-filter="design">GRAPHIC DESIGN</button><button class="filter" data-filter="photo">PHOTOGRAPHY</button></div>
+<div class="cards" id="projects">
+<article class="project" data-kind="video"><div class="thumb"><img alt="Beauty salon styling" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="placeholder"><b>SALON FILM</b><span>ADD YOUR VIDEO</span></div></div><div class="project-info"><small>VIDEO / PROMOTION</small><h3>Salon Cinematic</h3><p>Beauty, styling and service promotional films.</p></div></article>
+<article class="project" data-kind="social"><div class="thumb"><img alt="Video production setup" src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="placeholder"><b>REELS</b><span>ADD YOUR VIDEO</span></div></div><div class="project-info"><small>SHORT-FORM CONTENT</small><h3>Instagram Reels</h3><p>Fast-paced edits built to capture attention.</p><a href="https://www.instagram.com/thestylinghousesalon/reels/" rel="noopener noreferrer" style="display:inline-block;margin-top:18px;color:#ff6b24;font-weight:700;" target="_blank">VIEW ALL REELS ↗</a></div></article>
+<article class="project" data-kind="video"><div class="thumb"><img alt="Camera filming" src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="placeholder"><b>YOUTUBE</b><span>ADD YOUR VIDEO</span></div></div><div class="project-info"><small>VIDEO / YOUTUBE</small><h3>YouTube Content</h3><p>Long-form edits, pacing, titles and thumbnails.</p><a href="https://youtu.be/9O-9vjLxjAU" rel="noopener noreferrer" style="display:inline-block;margin-top:18px;color:#ff6b24;font-weight:700;" target="_blank">WATCH ON YOUTUBE ↗</a></div></article>
+<article class="project" data-kind="design"><div class="thumb"><img alt="Graphic design workspace" src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="placeholder"><b>POSTER DESIGN</b><span>ADD YOUR DESIGN</span></div></div><div class="project-info"><small>GRAPHIC DESIGN</small><h3>Posters &amp; Banners</h3><p>Promotional artwork, flyers and campaign visuals.</p></div></article>
+<article class="project" data-kind="photo"><div class="thumb"><img alt="Camera photography" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="placeholder"><b>PHOTOGRAPHY</b><span>ADD YOUR PHOTO</span></div></div><div class="project-info"><small>PHOTO / CAMERA</small><h3>Photography</h3><p>Creative frames, details and visual storytelling.</p></div></article>
+<article class="project" data-kind="video"><div class="thumb"><img alt="Cinematic film production" src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&amp;fit=crop&amp;w=900&amp;q=80"/><div class="placeholder"><b>VIDEOGRAPHY</b><span>ADD YOUR VIDEO</span></div></div><div class="project-info"><small>PRODUCTION / FILM</small><h3>Cinematic Videography</h3><p>Camera work, composition and mood-driven visuals.</p></div></article>
 </div>
-  
-  <article class="project" data-kind="design"><div class="thumb"><img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=900&q=80" alt="Graphic design workspace"><div class="placeholder"><b>POSTER DESIGN</b><span>ADD YOUR DESIGN</span></div></div><div class="project-info"><small>GRAPHIC DESIGN</small><h3>Posters & Banners</h3><p>Promotional artwork, flyers and campaign visuals.</p></div></article>
-  <article class="project" data-kind="photo"><div class="thumb"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Camera photography"><div class="placeholder"><b>PHOTOGRAPHY</b><span>ADD YOUR PHOTO</span></div></div><div class="project-info"><small>PHOTO / CAMERA</small><h3>Photography</h3><p>Creative frames, details and visual storytelling.</p></div></article>
-  <article class="project" data-kind="video"><div class="thumb"><img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=900&q=80" alt="Cinematic film production"><div class="placeholder"><b>VIDEOGRAPHY</b><span>ADD YOUR VIDEO</span></div></div><div class="project-info"><small>PRODUCTION / FILM</small><h3>Cinematic Videography</h3><p>Camera work, composition and mood-driven visuals.</p></div></article>
- </div>
 </div></section>
 <section class="section" id="about"><div class="wrap about-grid">
- <div class="about-art"><img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1000&q=80" alt="Camera and video production"></div>
- <div class="about-copy"><div class="eyebrow">A LITTLE ABOUT ME</div><h2>Creativity in<br>every <span class="orange">frame.</span></h2><p>I am a video editor and videographer passionate about visual storytelling. My creative interests include cinematic salon promotions, YouTube videos, Instagram Reels, photography and graphic design. I enjoy shaping raw footage and ideas into clear, engaging content.</p><p>I believe strong visuals combine thoughtful composition, rhythm, detail and emotion.</p><div class="skill-list"><span class="skill"><b>01</b> Premiere Pro</span><span class="skill"><b>02</b> After Effects</span><span class="skill"><b>03</b> Photoshop</span><span class="skill"><b>04</b> Illustrator</span><span class="skill"><b>05</b> Canva</span></div></div>
+<div class="about-art"><img alt="Camera and video production" src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"/></div>
+<div class="about-copy"><div class="eyebrow">A LITTLE ABOUT ME</div><h2>Creativity in<br/>every <span class="orange">frame.</span></h2><p>I am a video editor and videographer passionate about visual storytelling. My creative interests include cinematic salon promotions, YouTube videos, Instagram Reels, photography and graphic design. I enjoy shaping raw footage and ideas into clear, engaging content.</p><p>I believe strong visuals combine thoughtful composition, rhythm, detail and emotion.</p><div class="skill-list"><span class="skill"><b>01</b> Premiere Pro</span><span class="skill"><b>02</b> After Effects</span><span class="skill"><b>03</b> Photoshop</span><span class="skill"><b>04</b> Illustrator</span><span class="skill"><b>05</b> Canva</span></div></div>
 </div></section>
 <section class="section" id="services"><div class="wrap"><div class="eyebrow">WHAT I CREATE</div><h2>Creative <span class="orange">Services</span></h2><div class="services">
- <div class="service"><div class="num">01 / EDIT</div><h3>Video Editing</h3><p>Cinematic edits, promotional films and YouTube videos.</p></div>
- <div class="service"><div class="num">02 / SHOOT</div><h3>Videography</h3><p>Camera work, framing and visual storytelling.</p></div>
- <div class="service"><div class="num">03 / DESIGN</div><h3>Graphic Design</h3><p>Posters, banners, flyers and social media creatives.</p></div>
- <div class="service"><div class="num">04 / CAPTURE</div><h3>Photography</h3><p>Creative photography and visual content capture.</p></div>
+<div class="service"><div class="num">01 / EDIT</div><h3>Video Editing</h3><p>Cinematic edits, promotional films and YouTube videos.</p></div>
+<div class="service"><div class="num">02 / SHOOT</div><h3>Videography</h3><p>Camera work, framing and visual storytelling.</p></div>
+<div class="service"><div class="num">03 / DESIGN</div><h3>Graphic Design</h3><p>Posters, banners, flyers and social media creatives.</p></div>
+<div class="service"><div class="num">04 / CAPTURE</div><h3>Photography</h3><p>Creative photography and visual content capture.</p></div>
 </div></div></section>
-
-<section class="section" id="contact">
-  <div class="wrap">
-    <div class="contact">
-      <div>
-        <div class="eyebrow">HAVE A PROJECT IN MIND?</div>
-        <h2>LET'S CREATE<br>
-          <span class="orange">SOMETHING GREAT.</span>
-        </h2>
-        <p>
-          Available for video editing, cinematic projects,
-          videography and graphic design collaborations.
-          Let's bring your ideas to life!
-        </p>
-      </div>
-
-      <div class="contact-links">
-        <a class="btn primary"
-           href="mailto:formyworksps@gmail.com">
-          EMAIL ME ↗
-        </a>
-
-        <a class="btn ghost"
-           href="https://wa.me/919207456653"
-           target="_blank">
-          WHATSAPP ↗
-        </a>
-
-        <a class="btn ghost"
-           href="https://www.instagram.com/am.jeeson/"
-           target="_blank">
-          INSTAGRAM ↗
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
+<section class="section" id="contact"><div class="wrap"><div class="contact"><div><div class="eyebrow">HAVE A PROJECT IN MIND?</div><h2>Let's create<br/><span class="orange">something great.</span></h2><p>Available for creative projects, video editing, videography and design collaborations. Replace the contact link with your email or Instagram before publishing.</p></div><a class="btn primary" href="mailto:yourmail@example.com">CONTACT ME ↗</a></div></div></section>
 </main>
 <footer class="wrap footer"><span>© 2026 CREATIVE PORTFOLIO. ALL RIGHTS RESERVED.</span><span>VIDEO EDITOR <span class="orange">×</span> VIDEOGRAPHER</span></footer>
 <script>
